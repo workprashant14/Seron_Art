@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const access = await Whop.hasAccess({
-      id: "seron-art", // ← Replace this with your real product slug
+      id: "https://whop.com/seron-art/3-d-printable-designs-nghzLcIc8YBgki/app/", // ← Replace this with your real product slug
     });
   
     const content = document.getElementById("protected-content");
