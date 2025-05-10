@@ -1,3 +1,5 @@
+import { hasAccess } from "@whop-apps/sdk";
+import { headers } from "next/headers";
 document.addEventListener("DOMContentLoaded", function () {
   // Replace 'your-product-id' with your actual product ID from Whop
   const productId = "seron-art/3-d-printable-designs-nghzLcIc8YBgki";
