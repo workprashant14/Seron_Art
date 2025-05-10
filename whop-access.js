@@ -1,3 +1,5 @@
+import { hasAccess } from "@whop-apps/sdk";
+import { headers } from "next/headers";
 document.addEventListener("DOMContentLoaded", async () => {
   const protectedContent = document.getElementById("protected-content");
   const accessDenied = document.getElementById("access-denied");
