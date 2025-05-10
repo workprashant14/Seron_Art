@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Use REAL product ID from Whop dashboard (Settings → API)
     const { hasAccess } = await whop.checkAccess({
-      productId: "seron-art", // MUST replace this
+      productId: "prod_your_real_product_id", // MUST replace this
       redirectUrl: window.location.href
     });
 
@@ -27,6 +27,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         <a href="https://whop.com/seron-art" class="cta">Unlock Now</a>
       `;
     }
+  } catch (error) {
+    console.error("Access check failed:", error);
+    accessDenied.innerHTML = `
+      <p style="color: red;">Error: ${error.message}</p>
+      <a href="javascript:location.reload()" class="cta">Retry</a>
+    `;
+  }
+});
   } catch (error) {
     console.error("Access check failed:", error);
     accessDenied.innerHTML = `
