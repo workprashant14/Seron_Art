@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Use REAL product ID from Whop dashboard (Settings → API)
     const { hasAccess } = await whop.checkAccess({
-      productId: "prod_your_real_product_id", // MUST replace this
+      productId: "prod_jEAGM6zvFNVaA", // MUST replace this
       redirectUrl: window.location.href
     });
 
